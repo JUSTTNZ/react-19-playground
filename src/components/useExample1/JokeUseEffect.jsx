@@ -16,7 +16,7 @@ const Joke = () => {
     const fetchJoke = async () => {
       try {
         const res = await fetch('https://api.chucknorris.io/jokes/random');
-        const data = await res.json();
+        const data = await res.json();j
         setJoke(data);
         setLoading(false);
       } catch (error) {
@@ -36,3 +36,5 @@ const Joke = () => {
   return <JokeItem joke={joke} />;
 };
 export default Joke;
+
+
